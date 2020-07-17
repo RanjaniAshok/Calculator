@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="Style/style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500&display=swap" rel="stylesheet">
+</head>
+
+<body class="main">
+    <div class="calculator px-2">
+        <div class="display">
+            <input class="input" type="text" id="keys" />
+        </div>
+        <div class="grid keypad px-1">
+
+            <button type="button" class="keys" onclick="clr()">C</button>
+            <button type="button" class="keys" onclick="signed()">+/-</button>
+            <button type="button" class="keys" onclick="getInput('%');calculate()">%</button>
+            <button type="button" class="keys symbols" onclick="getInput('/')">/</button>
+            <button type="button" class="keys" onclick="getInput('7')">7</button>
+            <button type="button" class="keys" onclick="getInput('8')">8</button>
+            <button type="button" class="keys" onclick="getInput('9')">9</button>
+            <button type="button" class="keys symbols" onclick="getInput('x')">x</button>
+
+            <button type="button" class="keys" onclick="getInput('4')">4</button>
+            <button type="button" class="keys" onclick="getInput('5')">5</button>
+            <button type="button" class="keys" onclick="getInput('6')">6</button>
+            <button type="button" class="keys symbols" onclick="getInput('-')">-</button>
+
+            <button type="button" class="keys" onclick="getInput('1')">1 </button>
+            <button type="button" class="keys" onclick="getInput('2')">2</button>
+            <button type="button" class="keys" onclick="getInput('3')">3</button>
+            <button type="button" class="keys symbols" id="once" onclick="getInput('+')">+</button>
+            <button type="button" class="keys zero" onclick="getInput('0')">0</button>
+            <button type="button" class="keys" onclick="getInput('.')">.</button>
+            <button type="button" class="keys symbols " onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
